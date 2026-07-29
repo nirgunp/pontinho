@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golf – Card Game</title>
+  <meta name="description" content="Classic six-card Golf vs bots. Score low, pair your columns, win all 9 holes.">
+  <link rel="icon" type="image/png" href="ico_golf.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --felt: #0d3b1a;
+      --felt-mid: #14522a;
+      --cream: #f3e5c3;
+      --gold: #d7a73c;
+      --ink: #f7f3ec;
+      --muted: #c8d4c4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 90% 70% at 50% 0%, #1a5c32 0%, transparent 55%),
+        linear-gradient(160deg, #0a2e14 0%, var(--felt) 45%, #082412 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 36rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    img.app-icon {
+      width: 168px;
+      height: 168px;
+      border-radius: 36px;
+      margin-bottom: 1.25rem;
+      box-shadow:
+        0 0 0 3px var(--gold),
+        0 18px 40px rgba(0, 0, 0, 0.45);
+      animation: rise 0.7s ease-out both;
+    }
+
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.9rem, 5vw, 2.45rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0 0 0.65rem;
+      color: var(--cream);
+      animation: rise 0.7s ease-out 0.08s both;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: var(--muted);
+      margin: 0 0 1.75rem;
+      animation: rise 0.7s ease-out 0.16s both;
+    }
+
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.25rem;
+      animation: rise 0.7s ease-out 0.24s both;
+    }
+
+    .store-buttons a {
+      display: inline-block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .store-buttons a:hover {
+      transform: translateY(-2px);
+      opacity: 0.92;
+    }
+
+    .store-buttons img {
+      height: 54px;
+      width: auto;
+      display: block;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: var(--muted);
+      animation: rise 0.7s ease-out 0.32s both;
+    }
+
+    .contact p {
+      margin: 0.4rem 0;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="golf_icon.png" alt="Golf card game icon" class="app-icon">
+
+    <h1>Golf</h1>
+    <p class="tagline">
+      Classic six-card Golf vs bots. Score low, pair your columns, win all 9 holes.
+    </p>
+
+    <div class="store-buttons">
+      <a href="https://play.google.com/store/apps/details?id=com.tobias.golf_card_game" target="_blank" rel="noopener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+      </a>
+      <a href="https://apps.apple.com/app/idcom.tobias.golf.golfCardGame" target="_blank" rel="noopener">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+      </a>
+    </div>
+
+    <div class="contact">
+      <p>Support: <a href="mailto:spellmeierlucian@gmail.com">spellmeierlucian@gmail.com</a></p>
+      <p><a href="delete-account.html">Delete account</a></p>
+    </div>
+  </div>
+</body>
+</html>
